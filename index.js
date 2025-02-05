@@ -33,6 +33,7 @@ newGame.addEventListener("click", () => {
     computerScore = 0;
     gameScore.innerHTML = `score = 0 : 0`;
     startGame.textContent = "Restart Game";  
+    modalContent.innerHTML = `<p>New Game</p>`
     modalContainer.classList.add("show");
 });
 
