@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <title>Color Design</title>
+</head>
+<body>
+    <nav>
+        <h1>colorgame...</h1>
+        <div class="game-status-container">
+            <p data-testid="score" class="game-score">score = 0 : 0</p>
+            <button data-testid="newGameButton" class="restart">New Game</button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="modal">
+            <div class="box" data-testid="colorBox">
+                <p>Guess the correct color!</p>
+                <span>Instructions: Click on one of the colors name e.g "Purple"</span>
+            </div>
+            <button class="close-btn">X</button>
+            <button class="start-btn">Start Game</button>
+            <!-- <div class="game-status-box" data-testid="gameStatus">
+                <p>Correct Guess</p>
+            </div> -->
+        </div>
+        
+        <div class="btns">
+            <button data-testid="colorOption">
+                <span>000000</span>
+                <p class="color-code">black</p>
+            </button>
+            <button data-testid="colorOption">
+                <span>FFFFFC</span>
+                <p class="color-code">babypowder</p>
+            </button>
+            <button data-testid="colorOption">
+                <span>BEB7A4</span>
+                <p class="color-code">khaki</p>
+            </button>
+            <button data-testid="colorOption">
+                <span>FF7F11</span>
+                <p class="color-code">orange</p>
+            </button>
+            <button data-testid="colorOption">
+                <span>FF3F00</span>
+                <p class="color-code">coquelicot</p>
+            </button>
+            <button data-testid="colorOption">
+                <span>800080</span>
+                <p class="color-code">purple</p>
+            </button>
+        </div>
+    </div>
+    
+    <!-- JavaScript should load after the page content -->
+    <script src="./index.js" defer></script>
+</body>
+</html>
